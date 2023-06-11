@@ -17,7 +17,7 @@ const overflowHandler = () => {
     const cards = document.querySelectorAll('.card-body');
     cards.forEach((item) => {
         const textBlock = item.getElementsByClassName('card-text')[0];
-        if (textBlock.scrollHeight > 300) {
+        if (textBlock.scrollHeight > 290) {
             const buttonElement = item.getElementsByClassName('show-all')[0];
 
             textBlock.classList.add('card-text-overflow');
