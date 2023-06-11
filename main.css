@@ -266,8 +266,14 @@
 }
 
 .list-group-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.list-group-item_content {
+    display: block;
+
+
 }
 
 .list-group-item-info {
@@ -295,9 +301,13 @@
 }
 
 .list-group-item-light {
-    color: #292524;
-    background-color: #fafaf9;
-    border-color: #292524;
+    /*background-color: white;*/
+    border-color: white;
+    background: linear-gradient(135deg, #f953c6, #9b36c8, #3b1dc3, #1d60c3, #1dc399, #1dc362, #c31d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: normal;
 
 }
 
@@ -471,6 +481,10 @@ ul.social-icons a:hover {
     .input-group {
         width: auto;
     }
+}
+
+.cookie-popup {
+    background: transparent !important;
 }
 /** End footer */
 
