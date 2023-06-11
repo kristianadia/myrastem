@@ -246,11 +246,6 @@
     background-color: #581c87 !important;
 }
 
-.bg-transparent {
-
-    background-image: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(252,252,252,1) 0%, rgba(255,255,255,0) 100%);
-}
-
 .btn-header-violet {
     border-color: #9333ea;
     color: #9333ea;
