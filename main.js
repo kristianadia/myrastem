@@ -1,20 +1,41 @@
-document.addEventListener('DOMContentLoaded', () => {
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    overflowHandler()
+
+
+});
+window.addEventListener('resize', () => {
+    console.log('resize')
+    overflowHandler()
+})
+
+
+
+
+
+const overflowHandler = () => {
     const cards = document.querySelectorAll('.card-body');
     cards.forEach((item) => {
         const textBlock = item.getElementsByClassName('card-text')[0];
-            console.log(item)
-       if (textBlock.scrollHeight > 300) {
-           const buttonElement = item.getElementsByClassName('show-all')[0];
+        if (textBlock.scrollHeight > 290) {
+            const buttonElement = item.getElementsByClassName('show-all')[0];
 
-           textBlock.classList.add('card-text-overflow');
+            textBlock.classList.add('card-text-overflow');
 
-           if (buttonElement) {
-               buttonElement.classList.add('show')
-           }
+            if (buttonElement) {
+                buttonElement.classList.add('show')
+            }
 
-       }
+        } else {
+            const buttonElement = item.getElementsByClassName('show-all')[0];
+
+            textBlock.classList.remove('card-text-overflow');
+            if (buttonElement) {
+                buttonElement.classList.remove('show')
+            }
+        }
     })
-})
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     var cookiePopup = document.getElementById("cookie-popup");
