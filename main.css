@@ -554,3 +554,15 @@ ul.social-icons a:hover {
     }
 }
 
+
+
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button::after {
+    fill: white !important;
+}
+
