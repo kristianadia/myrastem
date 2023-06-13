@@ -7,8 +7,11 @@
 .dropdown-menu {
     font-size: 12px;
 }
+
+
 .nav-link {
     color: #afafaf;
+    text-align: center;
 }
 
 .navbar-brand {
@@ -25,7 +28,7 @@
 .main-header {
     height: 100%;
     min-height: 100vh;
-    background: url("./images/compass9.png") no-repeat fixed center;
+    background: url("./images/compass9.png") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -142,7 +145,25 @@
     .description-list {
         font-size: 15px;
     }
+    .main-header {
+        background-attachment: fixed;
+    }
 }
+
+@media screen and (max-width: 992px) {
+
+}
+
+.navbar {
+    padding: 5px 0 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 29%, rgba(0,0,0,0.5) 66%, rgba(0,0,0,0) 100%);
+}
+
+.navbar-toggler {
+    margin-top: 5px;
+}
+
 /*End text header*/
 
 /** Card */
@@ -508,6 +529,7 @@ ul.social-icons a:hover {
     background: rgba(255,255,255,.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 8px;
 }
 
@@ -520,6 +542,7 @@ ul.social-icons a:hover {
     height: 100px;
     border-radius: 50%;
     position: absolute;
+
     animation: move-up6 2s ease-in infinite alternate-reverse;
 }
 
